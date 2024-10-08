@@ -49,11 +49,11 @@ button {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #000;
-  background-color: #ffffff;
+  background-color: #d5d5d5;
 }
 
 .container {
@@ -64,6 +64,10 @@ body {
   padding-right: 15px;
 }
 
+.section-paddings {
+  padding: 30px 0;
+}
+
 /* =========== /COMMON STYLES ===========*/
 
 /* =========== HEADER STYLES ===========*/
@@ -71,7 +75,7 @@ body {
   max-width: 393px;
   display: flex;
 
-  background-color: #d5d5d5;
+  background-color: #c8c0c0;
   border-bottom: 2px solid #c29a0c;
 }
 .header-logo {
@@ -107,12 +111,6 @@ body {
 
   background-color: #e3e3e3;
 }
-.header-navigation {
-}
-.header-nav-list {
-}
-.header-nav-item {
-}
 .header-nav-link {
   font-weight: 500;
   font-size: 18px;
@@ -127,3 +125,47 @@ body {
   background-color: transparent;
 } */
 /* =========== /HEADER STYLES ===========*/
+
+/* =========== HERO STYLES ===========*/
+.hero-section {
+  max-width: 393px;
+  padding: 40px 0;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.5),
+      rgba(46, 47, 66, 0.5)
+    ),
+    url(../images/mobile-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-title {
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  color: #c29a0c;
+}
+/* =========== /HERO STYLES ===========*/
+
+/* =========== GIT STYLES ===========*/
+.git-title {
+  margin-bottom: 10px;
+
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+.git-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+
+  border: 2px solid rgb(255, 255, 255, 0.3);
+}
+
+.git-link {
+  font-weight: 500;
+  font-size: 18px;
+}
+/* =========== /GIT STYLES ===========*/

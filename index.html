@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
@@ -40,19 +46,55 @@
       </div>
     </header>
     <main>
+      <!-- SECTION HERO -->
       <section class="hero-section">
-        <h1 class="hero-title"></h1>
+        <div class="hero-container container">
+          <h1 class="hero-title">
+            Information and notes on the programming languages HTML, CSS and JS.
+          </h1>
+        </div>
       </section>
 
-      <section class="git-section">
-        <h2 class="git-title">Git/GitHub</h2>
+      <!-- SECTION GIT -->
+      <section class="git-section section-paddings">
+        <div class="git-container container">
+          <h2 class="git-title">Git/GitHub</h2>
+          <ul class="git-list">
+            <li class="git-item">
+              <a href="" class="git-link">Git commands</a>
+            </li>
+            <li class="git-item"><a href="" class="git-link">GitHub</a></li>
+          </ul>
+          <h3 class="git-subtitle">Git commands</h3>
+          <p class="git-text">
+            git status - надає інформацію про поточний стан репозиторію,
+            вказуючи, які файли були змінені, які файли готові до збереження, та
+            які не відстежуються. <br />
+            git add --all - щоб додати під контроль усі зміни, що сталися в
+            папці проєкту, тобто нові файли та зміни в існуючих. <br />
+            git restore --staged “name-file” - вилучить зміни, пов'язані з
+            файлом “name-file” , з-під контролю, але збереже всі інші зміни у
+            проєкті. <br />
+            git commit -m "commit message" - Для збереження змін у файлах
+            проєкту використовується команда. <br />
+            git commit з прапорцем -m, який дозволяє додати коротке повідомлення
+            прямо в командному рядку. git log - щоб переглянути історію
+            репозиторію. <br />
+            git push - надсилає (push) твої локальні коміти до віддаленого
+            репозиторію. Це забезпечує синхронізацію даних між локальним і
+            віддаленим репозиторіями. <br />
+            git pull - скопіювати зміни з віддаленого репозиторія.
+          </p>
+          <h3 class="git-subtitle">GitHub</h3>
+          <p class="git-text"></p>
+        </div>
       </section>
 
       <section class="html-section">
         <h2 class="html-title">Основи HTML</h2>
       </section>
 
-      <section class="css-section">
+      <section class="css-section .section-paddings">
         <h2 class="css-title">Основи CSS</h2>
       </section>
     </main>
