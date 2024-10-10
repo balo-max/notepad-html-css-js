@@ -71,12 +71,23 @@ body {
   font-weight: 600;
   font-size: 17px;
 }
+.code-word {
+  background-color: #2a3338;
+  color: #4cd4fd;
+}
 /* =========== /COMMON STYLES ===========*/
 
 /* =========== HEADER STYLES ===========*/
+main {
+  flex-grow: 1;
+}
 .header-section {
-  max-width: 393px;
+  position: fixed;
+  top: 0;
+  min-width: 393px;
   display: flex;
+
+  z-index: 9;
 
   background-color: #c8c0c0;
   border-bottom: 2px solid #c29a0c;
@@ -132,6 +143,7 @@ body {
 /* =========== HERO STYLES ===========*/
 .hero-section {
   max-width: 393px;
+  margin-top: 82.6px;
   margin-left: auto;
   margin-right: auto;
   padding: 40px 0;
@@ -183,6 +195,14 @@ body {
 .git-text {
   padding: 10px 0;
 }
+.github-repository-guide-list {
+  list-style-type: decimal;
+  padding-left: 15px;
+}
+.github-guide-item::marker {
+  font-weight: 600;
+  font-size: 17px;
+}
 .github-text {
   padding: 10px 0;
 
@@ -223,5 +243,12 @@ body {
 
 .content-paddings {
   padding: 10px 0;
+}
+.tags-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.tags-item:not(:last-child) {
+  margin-bottom: 8px;
 }
 /* =========== /HTML-BASIC STYLES ===========*/

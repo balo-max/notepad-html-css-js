@@ -14,14 +14,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
     />
     <link href="./css/styles.css" rel="stylesheet" />
-    <title>Notepad-HTML/CSS/JS</title>
+    <title>MYnotes-HTML/CSS/JS</title>
   </head>
   <body>
     <!-- SECTION HEADER -->
     <header>
       <div class="header-section container">
         <a class="header-logo" href="./index.html"
-          >Notepad<span class="header-logo-span-html">HTML</span
+          >MYnotes<span class="header-logo-span-html">HTML</span
           ><span class="header-logo-span-ccs">CCS</span>
         </a>
         <div class="header-partition"></div>
@@ -96,32 +96,31 @@
           <!-- GITHUB -->
           <h3 class="git-subtitle" id="github">GitHub</h3>
           <p class="github-text">Створення репозиторію на GitHub</p>
-          <ol class="github-repository-guide-list">
+          <ol class="github-repository-guide-list" type="1" start="1">
             <li class="github-guide-item">
-              <span class="black-word">1.</span> На сайті GitHub у верхньому
-              правому куті натисни на кнопку +, щоб відкрити випадаюче меню.
-              Вибери пункт <span class="black-word">New repository</span>.
+              На сайті GitHub у верхньому правому куті натисни на кнопку +, щоб
+              відкрити випадаюче меню. Вибери пункт
+              <span class="black-word">New repository</span>.
             </li>
             <li class="github-guide-item">
-              <span class="black-word">2.</span> В обов'язковому полі
+              В обов'язковому полі
               <span class="black-word">Repository</span> name введи назву свого
               репозиторію.
             </li>
             <li class="github-guide-item">
-              <span class="black-word">3.</span> У необов'язковому полі
+              У необов'язковому полі
               <span class="black-word">Description</span> ти можеш додати
               короткий опис репозиторію. Це допоможе іншим розробникам
               зрозуміти, про що твій проєкт.
             </li>
             <li class="github-guide-item">
-              <span class="black-word">4.</span> Також можеш вибрати, чи буде
-              твій репозиторій публічним (Public), чи приватним (Private).
-              Приватні репозиторії бачитимеш лише ти. Якщо ти хочеш ділитись
-              своїм репозиторієм (наприклад, із ментором), твій репозиторій має
-              бути публічним.
+              Також можеш вибрати, чи буде твій репозиторій публічним (Public),
+              чи приватним (Private). Приватні репозиторії бачитимеш лише ти.
+              Якщо ти хочеш ділитись своїм репозиторієм (наприклад, із
+              ментором), твій репозиторій має бути публічним.
             </li>
             <li class="github-guide-item">
-              <span class="black-word">5.</span> Рекомендовано в полі
+              Рекомендовано в полі
               <span class="black-word">Initialize this repository with:</span>
               встановити галочку на чекбокс
               <span class="black-word">Add a README file.</span> Це автоматично
@@ -129,15 +128,15 @@
               проєкт.
             </li>
             <li class="github-guide-item">
-              <span class="black-word">6.</span> У полі
+              У полі
               <span class="black-word">Add .gitignore</span> рекомендовано
               обрати зі списку пункт Node. Частою помилкою новачка є вибір
               пункту None замість <span class="black-word">Node</span>, тому
               будь тут дуже уважним/-ою!
             </li>
             <li class="github-guide-item">
-              <span class="black-word">7.</span> Натисни кнопку
-              <span class="black-word">Create repository</span>, і готово!
+              Натисни кнопку <span class="black-word">Create repository</span>,
+              і готово!
             </li>
           </ol>
         </div>
@@ -168,6 +167,8 @@
             структурування (розмітки) текстової інформації, додавання зображень,
             створення таблиць, форм, списків тощо.
           </p>
+
+          <!-- TAGS -->
           <h3 class="htmlbasic-subtitle" id="tags">Tags</h3>
           <ul class="tags-list content-paddings">
             <li class="tags-item">
@@ -185,11 +186,23 @@
             <li class="tags-item">
               <p class="tags-item-text">
                 Тег <span class="black-word">&lt;a&gt;</span> використовується в
-                HTML для створення посилання.
+                HTML для створення посилання. Атрибути: <br />
+                href - Визначає ціль посилання. <br />
+                ="https://htmlreference.io" - Ви можете передати абсолютну
+                URL-адресу. <br />
+                ="/element/div" - Ви можете передати URL відносно кореневого
+                домену. <br />
+                ="#footer" - Ви можете націлити елемент на одній сторінці. Тут
+                ми націлюємося на елемент &lt;div id="footer"&gt;<br />
+                ="mailto:alex@smith.com" - Ви можете використовувати протокол
+                mailto. Натиснувши посилання, відкриється поштовий клієнт
+                користувача.
               </p>
             </li>
             <li class="tags-item"></li>
           </ul>
+
+          <!-- ELEMENTS -->
           <h3 class="htmlbasic-subtitle" id="elements">Elements</h3>
           <ul class="elemets-list content-paddings">
             <li class="elements-item">
@@ -214,7 +227,43 @@
               </p>
             </li>
             <li class="elements-item">
-              <p class="elements-item-text"></p>
+              <p class="elements-item-text">
+                <span class="black-word">Флекс-бокс (Flexbox)</span> - це
+                CSS-модуль, який дозволяє легко створювати і управляти макетами
+                елементів в контейнері. Використання флексбоксу робить складання
+                адаптивних і гнучких макетів набагато простішим. Основні
+                концепції Flexbox: <br />
+
+                &nbsp; &nbsp; Флекс-контейнер: Це елемент, на якому ви
+                застосовуєте display: flex;. Усі його дочірні елементи стають
+                флекс-елементами.<br />
+
+                &nbsp; &nbsp; Флекс-елементи: Це елементи, що містяться в
+                флекс-контейнері. Вони автоматично підлаштовуються до простору
+                контейнера.<br />
+
+                Основні властивості флекс-контейнера: <br />
+
+                <code class="code-word">flex-direction:</code> Визначає напрямок
+                флекс-елементів (рядок або стовпчик). <br />
+                <code class="code-word">justify-content:</code> Вирівнює
+                флекс-елементи уздовж головної осі (по горизонталі або
+                вертикалі).<br />
+                <code class="code-word">align-items:</code> Вирівнює
+                флекс-елементи уздовж поперечної осі.<br />
+                <code class="code-word">flex-wrap:</code> Дозволяє
+                флекс-елементам перенестися на новий рядок, якщо вони не
+                вміщаються в контейнер.<br />
+                Основні властивості флекс-елементів:<br />
+
+                <code class="code-word">flex-grow:</code> Визначає, скільки
+                простору може зайняти елемент, у порівнянні з іншими
+                флекс-елементами.<br />
+                <code class="code-word">flex-shrink:</code> Визначає, як елемент
+                може зменшуватися, щоб вміститися в контейнері.<br />
+                <code class="code-word">flex-basis:</code> Вказує початковий
+                розмір елемента до того, як буде використаний flex-grow.
+              </p>
             </li>
           </ul>
           <h3 class="htmlbasic-subtitle">name</h3>
