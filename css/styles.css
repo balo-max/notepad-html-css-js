@@ -2,6 +2,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 h1,
 h2,
 h3,
@@ -11,6 +12,7 @@ h6,
 p {
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -71,28 +73,31 @@ body {
   font-weight: 600;
   font-size: 17px;
 }
+
 .code-word-css {
   background-color: #1f1f1f;
   color: #7cdcfe;
 }
+
 .code-word-tag {
   font-size: 17px;
   background-color: #c1c1c1;
   color: #4c66ce;
 }
+
 .code-word-atrb {
   /* background-color: #c1c1c1; */
   color: #28a2ce;
 }
+
 .code-word-value {
   color: #a3491b;
 }
+
 /* =========== /COMMON STYLES ===========*/
 
 /* =========== HEADER STYLES ===========*/
-main {
-  flex-grow: 1;
-}
+
 .header-section {
   position: fixed;
   top: 0;
@@ -104,6 +109,7 @@ main {
   background-color: #c8c0c0;
   border-bottom: 2px solid #c29a0c;
 }
+
 .header-logo {
   position: relative;
   margin-right: 50px;
@@ -113,6 +119,7 @@ main {
   font-size: 36px;
   color: #000;
 }
+
 .header-logo-span-html {
   position: absolute;
   top: 9px;
@@ -121,6 +128,7 @@ main {
   font-size: 15px;
   color: #c29a0c;
 }
+
 .header-logo-span-ccs {
   position: absolute;
   top: 24px;
@@ -129,6 +137,7 @@ main {
   font-size: 15px;
   color: #c29a0c;
 }
+
 .header-partition {
   width: 3px;
   margin-top: 10px;
@@ -137,11 +146,13 @@ main {
 
   background-color: #e3e3e3;
 }
+
 .header-nav-link {
   font-weight: 500;
   font-size: 18px;
   color: #000;
 }
+
 /* .header-burger-btn {
   width: 24px;
   height: 24px;
@@ -170,6 +181,7 @@ main {
   background-size: cover;
   background-position: center;
 }
+
 .hero-title {
   font-size: 28px;
   letter-spacing: 0.02em;
@@ -185,6 +197,7 @@ main {
   font-size: 24px;
   text-align: center;
 }
+
 .git-list {
   display: flex;
   justify-content: center;
@@ -194,32 +207,39 @@ main {
 
   border: 2px solid rgb(255, 255, 255, 0.3);
 }
+
 .git-link {
   font-weight: 500;
   font-size: 18px;
   color: #856903;
 }
+
 .git-subtitle {
   text-align: center;
   font-weight: 600;
   font-size: 18px;
 }
+
 .git-text {
   padding: 10px 0;
 }
+
 .github-repository-guide-list {
   list-style-type: decimal;
   padding-left: 15px;
 }
+
 .github-guide-item::marker {
   font-weight: 600;
   font-size: 17px;
 }
+
 .github-text {
   padding: 10px 0;
 
   font-weight: 600;
 }
+
 .github-repository-guide-list {
   display: flex;
   flex-direction: column;
@@ -232,6 +252,7 @@ main {
 
   margin-bottom: 10px;
 }
+
 .htmlbasic-nav-list {
   display: flex;
   justify-content: center;
@@ -241,11 +262,13 @@ main {
 
   border: 2px solid rgb(255, 255, 255, 0.3);
 }
+
 .htmlbasic-link {
   font-weight: 500;
   font-size: 18px;
   color: #856903;
 }
+
 .htmlbasic-subtitle {
   text-align: center;
   font-weight: 600;
@@ -255,18 +278,22 @@ main {
 .content-paddings {
   padding: 10px 0;
 }
+
 .tags-item {
   border-bottom: 2px solid rgb(54, 54, 54, 0.1);
 }
+
 .tags-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.tag-a-list {
+
+.tags-value-list {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-.tag-a-item {
+
+.tags-value-item {
   max-width: 310px;
   line-height: 1.3;
 }
@@ -278,6 +305,7 @@ main {
 
   margin-bottom: 10px;
 }
+
 .cssbasic-nav-list {
   display: flex;
   justify-content: center;
@@ -287,6 +315,7 @@ main {
 
   border: 2px solid rgb(255, 255, 255, 0.3);
 }
+
 .cssbasic-link {
   font-weight: 500;
   font-size: 18px;

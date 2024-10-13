@@ -50,7 +50,8 @@
       <section class="hero-section">
         <div class="hero-container container">
           <h1 class="hero-title">
-            Information and notes on the programming languages HTML, CSS and JS.
+            Information and notes on the programming languages HTML, CSS and
+            <span id="git">JS</span>.
           </h1>
         </div>
       </section>
@@ -59,7 +60,7 @@
       <section class="git-section section-paddings">
         <div class="git-container container">
           <!-- GIT -->
-          <h2 class="git-title" id="git">Git/GitHub</h2>
+          <h2 class="git-title">Git/GitHub</h2>
           <ul class="git-list">
             <li class="git-item">
               <a class="git-link" href="#git-commands">Git commands</a>
@@ -131,8 +132,9 @@
               У полі
               <span class="black-word">Add .gitignore</span> рекомендовано
               обрати зі списку пункт Node. Частою помилкою новачка є вибір
-              пункту None замість <span class="black-word">Node</span>, тому
-              будь тут дуже уважним/-ою!
+              пункту None замість
+              <span class="black-word" id="htmlbasic">Node</span>, тому будь тут
+              дуже уважним/-ою!
             </li>
             <li class="github-guide-item">
               Натисни кнопку <span class="black-word">Create repository</span>,
@@ -145,7 +147,7 @@
       <!-- SECTION HTML-BASIC -->
       <section class="htmlbasic-section">
         <div class="htmlbasic-container container">
-          <h2 class="htmlbasic-title" id="htmlbasic">Основи HTML</h2>
+          <h2 class="htmlbasic-title">Основи HTML</h2>
           <ul class="htmlbasic-nav-list">
             <li class="htmlbasic-item">
               <a href="#tags" class="htmlbasic-link">Tags</a>
@@ -180,48 +182,76 @@
               </p>
             </li>
             <li class="tags-item">
+              <!-- TAG <a> -->
               <p class="tags-item-text">
                 Тег
                 <span class="code-word-tag">&lt;a&gt;</span> використовується в
-                HTML для створення посилання. Атрибути: <br />
-                &nbsp;&nbsp;<code class="code-word-atrb">href</code> - Визначає
-                ціль посилання.
+                HTML для створення посилання. Атрибути:
               </p>
-              <ul class="tag-a-list">
-                <li class="tag-a-item">
-                  <code class="code-word-value"
-                    >="https://htmlreference.io"</code
-                  >
-                  - Ви можете передати абсолютну URL-адресу.
+              <ul class="tags-atb-list">
+                <li class="tags-atb-item">
+                  &nbsp;&nbsp;<code class="code-word-atrb">href</code> -
+                  Визначає ціль посилання.
+                  <ul class="tags-value-list">
+                    <li class="tags-value-item">
+                      <code class="code-word-value"
+                        >="https://htmlreference.io"</code
+                      >
+                      - Ви можете передати абсолютну URL-адресу.
+                    </li>
+                    <li class="tags-value-item">
+                      <code class="code-word-value">="/element/div"</code> - Ви
+                      можете передати URL відносно кореневого домену.
+                    </li>
+                    <li class="tags-value-item">
+                      <code class="code-word-value">="#footer"</code> - Ви
+                      можете націлити елемент на одній сторінці. Тут ми
+                      націлюємося на елемент &lt;div id="footer"&gt;
+                    </li>
+                    <li class="tags-value-item">
+                      <code class="code-word-value"
+                        >="mailto:alex@smith.com"</code
+                      >
+                      - Ви можете використовувати протокол mailto. Натиснувши
+                      посилання, відкриється поштовий клієнт користувача.
+                    </li>
+                  </ul>
                 </li>
-                <li class="tag-a-item">
-                  <code class="code-word-value">="/element/div"</code> - Ви
-                  можете передати URL відносно кореневого домену.
-                </li>
-                <li class="tag-a-item">
-                  <code class="code-word-value">="#footer"</code> - Ви можете
-                  націлити елемент на одній сторінці. Тут ми націлюємося на
-                  елемент &lt;div id="footer"&gt;
-                </li>
-                <li class="tag-a-item">
-                  <code class="code-word-value">="mailto:alex@smith.com"</code>
-                  - Ви можете використовувати протокол mailto. Натиснувши
-                  посилання, відкриється поштовий клієнт користувача.
+                <li class="tags-atb-item">
+                  &nbsp;&nbsp;<code class="code-word-atrb">target</code> -
+                  Визначає, у якій вкладці чи вікні відображатиметься натиснуте
+                  посилання.
+                  <ul class="tags-value-list">
+                    <li class="tags-value-item">
+                      <code class="code-word-value">="_blank"</code> -
+                      Відкривається в новому контексті перегляду, яким зазвичай
+                      є нова вкладка.
+                    </li>
+                    <li class="tags-value-item">
+                      <code class="code-word-value">="_self"</code> -
+                      Відкривається в поточній вкладці.
+                    </li>
+                  </ul>
                 </li>
               </ul>
+            </li>
+            <li class="tags-item">
+              <!-- TAG <ol> -->
               <p class="tags-item-text">
-                &nbsp;&nbsp;<code class="code-word-atrb">target</code> -
-                Визначає, у якій вкладці чи вікні відображатиметься натиснуте
-                посилання.
+                Тег
+                <span class="code-word-tag">&lt;ol&gt;</span> - використовується
+                для створення нумерованих списків (ordered lists). У таких
+                списках елементи автоматично нумеруються (наприклад, 1, 2, 3...)
+                відповідно до порядку, у якому вони з'являються.
               </p>
-              <ul class="tag-a-list">
-                <li class="tag-a-item">
-                  <code class="code-word-value">="_blank"</code> - Відкривається
-                  в новому контексті перегляду, яким зазвичай є нова вкладка.
+              <ul class="tags-atb-list">
+                <li class="tags-atb-item">
+                  &nbsp;&nbsp;<code class="code-word-atrb">type</code> -
+                  Визначає спосіб нумерації списку(1,a,A,i,I).
                 </li>
-                <li class="tag-a-item">
-                  <code class="code-word-value">="_self"</code> - Відкривається
-                  в поточній вкладці.
+                <li class="tags-atb-item">
+                  &nbsp;&nbsp;<code class="code-word-atrb">start</code> -
+                  Визначає число, з якого починається список.
                 </li>
               </ul>
             </li>
