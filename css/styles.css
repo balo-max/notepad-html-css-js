@@ -100,14 +100,18 @@ body {
 
 .header-section {
   position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   top: 0;
+
   min-width: 393px;
   display: flex;
 
-  z-index: 9;
-
   background-color: #c8c0c0;
   border-bottom: 2px solid #c29a0c;
+
+  z-index: 9;
+  transition: top 0.3s;
 }
 
 .header-logo {

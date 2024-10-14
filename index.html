@@ -19,7 +19,7 @@
   <body>
     <!-- SECTION HEADER -->
     <header>
-      <div class="header-section container">
+      <div class="header-section container" id="header">
         <a class="header-logo" href="./index.html"
           >MYnotes<span class="header-logo-span-html">HTML</span
           ><span class="header-logo-span-ccs">CCS</span>
@@ -50,14 +50,13 @@
       <section class="hero-section">
         <div class="hero-container container">
           <h1 class="hero-title">
-            Information and notes on the programming languages HTML, CSS and
-            <span id="git">JS</span>.
+            Information and notes on the programming languages HTML, CSS and JS.
           </h1>
         </div>
       </section>
 
       <!-- SECTION GIT -->
-      <section class="git-section section-paddings">
+      <section class="git-section section-paddings" id="git">
         <div class="git-container container">
           <!-- GIT -->
           <h2 class="git-title">Git/GitHub</h2>
@@ -132,9 +131,8 @@
               У полі
               <span class="black-word">Add .gitignore</span> рекомендовано
               обрати зі списку пункт Node. Частою помилкою новачка є вибір
-              пункту None замість
-              <span class="black-word" id="htmlbasic">Node</span>, тому будь тут
-              дуже уважним/-ою!
+              пункту None замість <span class="black-word">Node</span>, тому
+              будь тут дуже уважним/-ою!
             </li>
             <li class="github-guide-item">
               Натисни кнопку <span class="black-word">Create repository</span>,
@@ -145,7 +143,7 @@
       </section>
 
       <!-- SECTION HTML-BASIC -->
-      <section class="htmlbasic-section">
+      <section class="htmlbasic-section" id="htmlbasic">
         <div class="htmlbasic-container container">
           <h2 class="htmlbasic-title">Основи HTML</h2>
           <ul class="htmlbasic-nav-list">
@@ -258,7 +256,13 @@
             <!-- <li class="tags-item"></li> -->
           </ul>
 
-          <h3 class="htmlbasic-subtitle">name</h3>
+          <h3 class="htmlbasic-subtitle">Simbols</h3>
+          <ul class="simbols-list">
+            <li class="simblos-item"></li>
+            <li class="simblos-item"></li>
+            <li class="simblos-item"></li>
+            <li class="simblos-item"></li>
+          </ul>
           <h3 class="htmlbasic-subtitle">name</h3>
         </div>
       </section>
@@ -347,5 +351,7 @@
       </section>
     </main>
     <footer></footer>
+
+    <script src="./js/header.js"></script>
   </body>
 </html>
