@@ -69,29 +69,62 @@
             </li>
           </ul>
           <h3 class="git-subtitle" id="git-commands">Git commands</h3>
-          <p class="git-text">
-            <span class="black-word">git status</span> - надає інформацію про
-            поточний стан репозиторію, вказуючи, які файли були змінені, які
-            файли готові до збереження, та які не відстежуються. <br />
-            <span class="black-word">git add --all</span> - щоб додати під
-            контроль усі зміни, що сталися в папці проєкту, тобто нові файли та
-            зміни в існуючих. <br />
-            <span class="black-word">git restore --staged “name-file”</span> -
-            вилучить зміни, пов'язані з файлом “name-file” , з-під контролю, але
-            збереже всі інші зміни у проєкті. <br />
-            <span class="black-word">git commit -m "commit message"</span> - Для
-            збереження змін у файлах проєкту використовується команда. git
-            commit з прапорцем -m, який дозволяє додати коротке повідомлення
-            прямо в командному рядку.
-            <br />
-            <span class="black-word">git log</span> - щоб переглянути історію
-            репозиторію. <br />
-            <span class="black-word">git push</span> - надсилає (push) твої
-            локальні коміти до віддаленого репозиторію. Це забезпечує
-            синхронізацію даних між локальним і віддаленим репозиторіями. <br />
-            <span class="black-word">git pull</span> - скопіювати зміни з
-            віддаленого репозиторія.
-          </p>
+          <div class="wrapper-paddings">
+            <ul class="git-commands-list">
+              <li class="git-commands-item">
+                <span class="black-word">git status</span> - надає інформацію
+                про поточний стан репозиторію, вказуючи, які файли були змінені,
+                які файли готові до збереження, та які не відстежуються.
+              </li>
+              <li class="git-commands-item">
+                <span class="black-word">git add --all</span> - щоб додати під
+                контроль усі зміни, що сталися в папці проєкту, тобто нові файли
+                та зміни в існуючих.
+              </li>
+              <li class="git-commands-item">
+                <span class="black-word">git restore --staged “name-file”</span>
+                - вилучить зміни, пов'язані з файлом “name-file” , з-під
+                контролю, але збереже всі інші зміни у проєкті.
+              </li>
+              <li class="git-commands-item">
+                <span class="black-word">git commit -m "commit message"</span> -
+                Для збереження змін у файлах проєкту використовується команда.
+                git commit з прапорцем -m, який дозволяє додати коротке
+                повідомлення прямо в командному рядку.
+              </li>
+              <li class="git-commands-item">
+                <span class="black-word">git log</span> - щоб переглянути
+                історію репозиторію.
+              </li>
+              <li class="git-commands-item">
+                <span class="black-word">git push</span> - надсилає (push) твої
+                локальні коміти до віддаленого репозиторію. Це забезпечує
+                синхронізацію даних між локальним і віддаленим репозиторіями.
+              </li>
+              <li class="git-commands-item">
+                <span class="black-word">git pull</span> - скопіювати зміни з
+                віддаленого репозиторія.
+              </li>
+              <li class="git-commands-item">
+                <span class="black-word">git checkout -b "name"</span> -
+                створення локальной гілки.
+              </li>
+              <li class="git-commands-item">
+                <span class="black-word">git switch "name"</span> - переміщення
+                між гілками.
+              </li>
+              <li class="git-commands-item">
+                <span class="black-word">git merge "name"</span> - забрати зміни
+                з основної гілки в поточну. (Наприклад: <br />
+                <code>
+                  &nbsp;&nbsp;git switch main <br />
+                  &nbsp;&nbsp;git pull <br />
+                  &nbsp;&nbsp;git switch "name branch" <br />
+                  &nbsp;&nbsp;git merge "name branch" </code
+                >)
+              </li>
+            </ul>
+          </div>
 
           <!-- GITHUB -->
           <h3 class="git-subtitle" id="github">GitHub</h3>
@@ -151,10 +184,10 @@
               <a href="#tags" class="htmlbasic-link">Tags</a>
             </li>
             <li class="htmlbasic-item">
-              <a href="" class="htmlbasic-link">Simbols</a>
+              <a href="#Simbols" class="htmlbasic-link">Simbols</a>
             </li>
             <li class="htmlbasic-item">
-              <a href="" class="htmlbasic-link">name</a>
+              <a href="#adaptive" class="htmlbasic-link">Adaptive</a>
             </li>
           </ul>
           <p class="htmlbasic-text content-paddings">
@@ -167,103 +200,154 @@
 
           <!-- TAGS -->
           <h3 class="htmlbasic-subtitle" id="tags">Tags</h3>
-          <ul class="tags-list content-paddings">
-            <li class="tags-item">
-              <p class="tags-item-text">
-                Тег
-                <span class="code-word-tag">&lt;code&gt;</span> використовується
-                в HTML для виділення фрагментів коду. Він допомагає зробити
-                текст, що представляє програмний код, зрозумілішим та легшим для
-                читання. Зазвичай текст, обгорнутий у тег &lt;code&gt;,
-                відображається у моноширинному шрифті, що підкреслює його
-                програмістське чи технічне походження.
-              </p>
-            </li>
-            <li class="tags-item">
-              <!-- TAG <a> -->
-              <p class="tags-item-text">
-                Тег
-                <span class="code-word-tag">&lt;a&gt;</span> використовується в
-                HTML для створення посилання. Атрибути:
-              </p>
-              <ul class="tags-atb-list">
-                <li class="tags-atb-item">
-                  &nbsp;&nbsp;<code class="code-word-atrb">href</code> -
-                  Визначає ціль посилання.
-                  <ul class="tags-value-list">
-                    <li class="tags-value-item">
-                      <code class="code-word-value"
-                        >="https://htmlreference.io"</code
-                      >
-                      - Ви можете передати абсолютну URL-адресу.
-                    </li>
-                    <li class="tags-value-item">
-                      <code class="code-word-value">="/element/div"</code> - Ви
-                      можете передати URL відносно кореневого домену.
-                    </li>
-                    <li class="tags-value-item">
-                      <code class="code-word-value">="#footer"</code> - Ви
-                      можете націлити елемент на одній сторінці. Тут ми
-                      націлюємося на елемент &lt;div id="footer"&gt;
-                    </li>
-                    <li class="tags-value-item">
-                      <code class="code-word-value"
-                        >="mailto:alex@smith.com"</code
-                      >
-                      - Ви можете використовувати протокол mailto. Натиснувши
-                      посилання, відкриється поштовий клієнт користувача.
-                    </li>
-                  </ul>
-                </li>
-                <li class="tags-atb-item">
-                  &nbsp;&nbsp;<code class="code-word-atrb">target</code> -
-                  Визначає, у якій вкладці чи вікні відображатиметься натиснуте
-                  посилання.
-                  <ul class="tags-value-list">
-                    <li class="tags-value-item">
-                      <code class="code-word-value">="_blank"</code> -
-                      Відкривається в новому контексті перегляду, яким зазвичай
-                      є нова вкладка.
-                    </li>
-                    <li class="tags-value-item">
-                      <code class="code-word-value">="_self"</code> -
-                      Відкривається в поточній вкладці.
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="tags-item">
-              <!-- TAG <ol> -->
-              <p class="tags-item-text">
-                Тег
-                <span class="code-word-tag">&lt;ol&gt;</span> - використовується
-                для створення нумерованих списків (ordered lists). У таких
-                списках елементи автоматично нумеруються (наприклад, 1, 2, 3...)
-                відповідно до порядку, у якому вони з'являються.
-              </p>
-              <ul class="tags-atb-list">
-                <li class="tags-atb-item">
-                  &nbsp;&nbsp;<code class="code-word-atrb">type</code> -
-                  Визначає спосіб нумерації списку(1,a,A,i,I).
-                </li>
-                <li class="tags-atb-item">
-                  &nbsp;&nbsp;<code class="code-word-atrb">start</code> -
-                  Визначає число, з якого починається список.
-                </li>
-              </ul>
-            </li>
-            <!-- <li class="tags-item"></li> -->
-          </ul>
+          <div class="wrapper-paddings">
+            <ul class="tags-list">
+              <li class="tags-item">
+                <p class="tags-item-text">
+                  Тег
+                  <span class="code-word-tag">&lt;code&gt;</span>
+                  використовується в HTML для виділення фрагментів коду. Він
+                  допомагає зробити текст, що представляє програмний код,
+                  зрозумілішим та легшим для читання. Зазвичай текст, обгорнутий
+                  у тег &lt;code&gt;, відображається у моноширинному шрифті, що
+                  підкреслює його програмістське чи технічне походження.
+                </p>
+              </li>
+              <li class="tags-item">
+                <!-- TAG <a> -->
+                <p class="tags-item-text">
+                  Тег
+                  <span class="code-word-tag">&lt;a&gt;</span> використовується
+                  в HTML для створення посилання. Атрибути:
+                </p>
+                <ul class="tags-atb-list">
+                  <li class="tags-atb-item">
+                    &nbsp;&nbsp;<code class="code-word-atrb">href</code> -
+                    Визначає ціль посилання.
+                    <ul class="tags-value-list">
+                      <li class="tags-value-item">
+                        <code class="code-word-value"
+                          >="https://htmlreference.io"</code
+                        >
+                        - Ви можете передати абсолютну URL-адресу.
+                      </li>
+                      <li class="tags-value-item">
+                        <code class="code-word-value">="/element/div"</code> -
+                        Ви можете передати URL відносно кореневого домену.
+                      </li>
+                      <li class="tags-value-item">
+                        <code class="code-word-value">="#footer"</code> - Ви
+                        можете націлити елемент на одній сторінці. Тут ми
+                        націлюємося на елемент &lt;div id="footer"&gt;
+                      </li>
+                      <li class="tags-value-item">
+                        <code class="code-word-value"
+                          >="mailto:alex@smith.com"</code
+                        >
+                        - Ви можете використовувати протокол mailto. Натиснувши
+                        посилання, відкриється поштовий клієнт користувача.
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="tags-atb-item">
+                    &nbsp;&nbsp;<code class="code-word-atrb">target</code> -
+                    Визначає, у якій вкладці чи вікні відображатиметься
+                    натиснуте посилання.
+                    <ul class="tags-value-list">
+                      <li class="tags-value-item">
+                        <code class="code-word-value">="_blank"</code> -
+                        Відкривається в новому контексті перегляду, яким
+                        зазвичай є нова вкладка.
+                      </li>
+                      <li class="tags-value-item">
+                        <code class="code-word-value">="_self"</code> -
+                        Відкривається в поточній вкладці.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="tags-item">
+                <!-- TAG <ol> -->
+                <p class="tags-item-text">
+                  Тег
+                  <span class="code-word-tag">&lt;ol&gt;</span> -
+                  використовується для створення нумерованих списків (ordered
+                  lists). У таких списках елементи автоматично нумеруються
+                  (наприклад, 1, 2, 3...) відповідно до порядку, у якому вони
+                  з'являються.
+                </p>
+                <ul class="tags-atb-list">
+                  <li class="tags-atb-item">
+                    &nbsp;&nbsp;<code class="code-word-atrb">type</code> -
+                    Визначає спосіб нумерації списку(1,a,A,i,I).
+                  </li>
+                  <li class="tags-atb-item">
+                    &nbsp;&nbsp;<code class="code-word-atrb">start</code> -
+                    Визначає число, з якого починається список.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
 
-          <h3 class="htmlbasic-subtitle">Simbols</h3>
-          <ul class="simbols-list">
-            <li class="simblos-item"></li>
-            <li class="simblos-item"></li>
-            <li class="simblos-item"></li>
-            <li class="simblos-item"></li>
-          </ul>
-          <h3 class="htmlbasic-subtitle">name</h3>
+          <!-- SIMBOLS -->
+          <h3 class="htmlbasic-subtitle" id="Simbols">Simbols</h3>
+          <div class="wrapper-paddings">
+            <ul class="simbols-list">
+              <li class="simblos-item">
+                <a
+                  class="simbols-link"
+                  href="https://www.toptal.com/designers/htmlarrows/symbols/"
+                  target="_blank"
+                  >Посилання на ресурс з сімволами - Toptal.com</a
+                >
+              </li>
+              <li class="simblos-item">
+                <span class="black-word">&amp;lt;</span> - сімвол &lt;
+              </li>
+              <li class="simblos-item">
+                <span class="black-word">&amp;gt;</span> - сімвол &gt;
+              </li>
+              <li class="simblos-item">
+                <span class="black-word">&amp;nbsp;</span> - будете сприйматися
+                в HTML як пробіл.
+              </li>
+            </ul>
+          </div>
+
+          <!-- ADAPTIVE -->
+          <h3 class="htmlbasic-subtitle" id="adaptive">Adaptive</h3>
+          <div class="wrapper-paddings">
+            <ul class="adaptive-list">
+              <li class="adaptive-item">
+                <p class="adaptive-text">
+                  Підключення одного зображення в декількох форматах з різною
+                  щільністю екранів:
+                </p>
+                <img
+                  src="./images/code-retina.jpg"
+                  alt="code-retina-img"
+                  class="adaptive-img"
+                  width="363"
+                  height="500"
+                />
+              </li>
+              <li class="adaptive-item">
+                <p class="adaptive-text">
+                  Підключення різних зображення в одному форматі з різною
+                  щільністю екранів:
+                </p>
+                <img
+                  src="./images/adaptive-devices.jpg"
+                  alt="code-adaptive-devices-img"
+                  class="adaptive-img"
+                  width="363"
+                  height="500"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -285,68 +369,94 @@
 
           <!-- ELEMENTS -->
           <h3 class="htmlbasic-subtitle" id="elements">Elements</h3>
-          <ul class="elemets-list content-paddings">
-            <li class="elements-item">
-              <p class="elements-item-text">
-                <span class="black-word"
-                  >Блоковий елемент (block-level element)</span
-                >
-                займає весь рядок цілком незалежно від обсягу його контенту,
-                тому кілька блокових елементів візуально йдуть один за одним
-                зверху вниз.
-              </p>
-            </li>
-            <li class="elements-item">
-              <p class="elements-item-text">
-                <span class="black-word"
-                  >Рядковий елемент (inline element)</span
-                >
-                — займає те саме місце, що займає його контент. Отже, кілька
-                рядкових елементів можуть розташовуватися в одному рядку. Коли в
-                рядку не вистачає місця для вміщення такого елементу, він
-                переноситься на новий рядок.
-              </p>
-            </li>
-            <li class="elements-item">
-              <p class="elements-item-text">
-                <span class="black-word">Флекс-бокс (Flexbox)</span> - це
-                CSS-модуль, який дозволяє легко створювати і управляти макетами
-                елементів в контейнері. Використання флексбоксу робить складання
-                адаптивних і гнучких макетів набагато простішим. Основні
-                концепції Flexbox: <br />
-
-                &nbsp; &nbsp; Флекс-контейнер: Це елемент, на якому ви
-                застосовуєте display: flex;. Усі його дочірні елементи стають
-                флекс-елементами.<br />
-
-                &nbsp; &nbsp; Флекс-елементи: Це елементи, що містяться в
-                флекс-контейнері. Вони автоматично підлаштовуються до простору
-                контейнера.<br />
-
-                Основні властивості флекс-контейнера: <br />
-
-                <code class="code-word">flex-direction:</code> Визначає напрямок
-                флекс-елементів (рядок або стовпчик). <br />
-                <code class="code-word">justify-content:</code> Вирівнює
-                флекс-елементи уздовж головної осі (по горизонталі або
-                вертикалі).<br />
-                <code class="code-word">align-items:</code> Вирівнює
-                флекс-елементи уздовж поперечної осі.<br />
-                <code class="code-word">flex-wrap:</code> Дозволяє
-                флекс-елементам перенестися на новий рядок, якщо вони не
-                вміщаються в контейнер.<br />
-                Основні властивості флекс-елементів:<br />
-
-                <code class="code-word">flex-grow:</code> Визначає, скільки
-                простору може зайняти елемент, у порівнянні з іншими
-                флекс-елементами.<br />
-                <code class="code-word">flex-shrink:</code> Визначає, як елемент
-                може зменшуватися, щоб вміститися в контейнері.<br />
-                <code class="code-word">flex-basis:</code> Вказує початковий
-                розмір елемента до того, як буде використаний flex-grow.
-              </p>
-            </li>
-          </ul>
+          <div class="wrapper-paddings">
+            <ul class="elemets-list">
+              <li class="elements-item">
+                <p class="elements-item-text">
+                  <span class="black-word"
+                    >Блоковий елемент (block-level element)</span
+                  >
+                  займає весь рядок цілком незалежно від обсягу його контенту,
+                  тому кілька блокових елементів візуально йдуть один за одним
+                  зверху вниз.
+                </p>
+              </li>
+              <li class="elements-item">
+                <p class="elements-item-text">
+                  <span class="black-word"
+                    >Рядковий елемент (inline element)</span
+                  >
+                  — займає те саме місце, що займає його контент. Отже, кілька
+                  рядкових елементів можуть розташовуватися в одному рядку. Коли
+                  в рядку не вистачає місця для вміщення такого елементу, він
+                  переноситься на новий рядок.
+                </p>
+              </li>
+              <li class="elements-item">
+                <p class="elements-item-text">
+                  <span class="black-word">Флекс-бокс (Flexbox)</span> - це
+                  CSS-модуль, який дозволяє легко створювати і управляти
+                  макетами елементів в контейнері. Використання флексбоксу
+                  робить складання адаптивних і гнучких макетів набагато
+                  простішим. Основні концепції Flexbox: <br />
+                  &nbsp; &nbsp;
+                  <span class="italic-word">Флекс-контейнер</span> - це елемент,
+                  на якому ви застосовуєте display: flex;. Усі його дочірні
+                  елементи стають флекс-елементами.<br />
+                  &nbsp; &nbsp;
+                  <span class="italic-word">Флекс-елементи</span> - це елементи,
+                  що містяться в флекс-контейнері. Вони автоматично
+                  підлаштовуються до простору контейнера.<br />
+                </p>
+                <p class="elements-item-text">
+                  <span class="italic-word"
+                    >Основні властивості флекс-контейнера:</span
+                  >
+                </p>
+                <ul class="elements-attribute-list">
+                  <li class="elements-attribute-item">
+                    <code class="code-word-atrb">flex-direction:</code> Визначає
+                    напрямок флекс-елементів (рядок або стовпчик).
+                  </li>
+                  <li class="elements-attribute-item">
+                    <code class="code-word-atrb">justify-content:</code>
+                    Вирівнює флекс-елементи уздовж головної осі (по горизонталі
+                    або вертикалі).
+                  </li>
+                  <li class="elements-attribute-item">
+                    <code class="code-word-atrb">align-items:</code> Вирівнює
+                    флекс-елементи уздовж поперечної осі.
+                  </li>
+                  <li class="elements-attribute-item">
+                    <code class="code-word-atrb">flex-wrap:</code> Дозволяє
+                    флекс-елементам перенестися на новий рядок, якщо вони не
+                    вміщаються в контейнер.
+                  </li>
+                </ul>
+                <p class="elements-item-text">
+                  <span class="italic-word"
+                    >Основні властивості флекс-елементів:</span
+                  >
+                </p>
+                <ul class="elements-attribute-list">
+                  <li class="elements-attribute-item">
+                    <code class="code-word-atrb">flex-grow:</code> Визначає,
+                    скільки простору може зайняти елемент, у порівнянні з іншими
+                    флекс-елементами.
+                  </li>
+                  <li class="elements-attribute-item">
+                    <code class="code-word-atrb">flex-shrink:</code> Визначає,
+                    як елемент може зменшуватися, щоб вміститися в контейнері.
+                  </li>
+                  <li class="elements-attribute-item">
+                    <code class="code-word-atrb">flex-basis:</code> Вказує
+                    початковий розмір елемента до того, як буде використаний
+                    flex-grow.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
